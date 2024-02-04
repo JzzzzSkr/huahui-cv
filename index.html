@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Resume</title>
+    <link rel="stylesheet" href="./bin/icons/iconfont.css" />
+    <link rel="stylesheet" href="./bin/css/base.css" />
+    <link rel="stylesheet" href="./bin/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Huahui(Michael) Liang</h1>
+        <div class="basic">
+          <div class="address">
+            <span class="iconfont icon-home"></span>
+            <p>Lives in <i>Hobart Tasmania</i></p>
+          </div>
+          <div class="uni">
+            <span class="iconfont icon-rencaishuangxuanhui"></span>
+            <p>Studies at <i>University of Tasmania</i></p>
+          </div>
+          <div class="major">
+            <span class="iconfont icon-shidirenzheng"></span>
+            <p>
+              Bachelor of Information and Communication Technology (specialising
+              in AI)
+            </p>
+          </div>
+          <div class="email">
+            <span class="iconfont icon-email"></span>
+            <p>Email: huahuiie@outlook.com</p>
+          </div>
+          <div class="phone">
+            <span class="iconfont icon-phone"></span>
+            <p>Phone: 421896406</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="skills-graph">
+        <div class="tech-stack">
+          <!-- Tech Stack List -->
+          <h2>Technology stack</h2>
+          <div class="frontend" style="padding-top: 1em">
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+              <li>html,</li>
+              <li>css,</li>
+              <li>javascript,</li>
+              <li>react</li>
+            </ul>
+          </div>
+          <div class="backend">
+            <h3>Backend</h3>
+            <ul class="skill-list">
+              <li>express.js,</li>
+              <li>node.js,</li>
+              <li>PHP,</li>
+              <li>python</li>
+            </ul>
+          </div>
+          <div class="database">
+            <h3>Database</h3>
+            <ul class="skill-list">
+              <li>mysql,</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="others">
+            <h3>Others</h3>
+            <ul class="skill-list">
+              <li>WordPress</li>
+            </ul>
+          </div>
+        </div>
+        <div class="graph">
+          <h2>Skills Graph</h2>
+          <div id="bar_chart" style="width: 100%; height: auto"></div>
+        </div>
+      </div>
+
+      <section class="projects">
+        <h2>Project experience</h2>
+        <!-- Projects List -->
+        <div class="project-experience-one">
+          <h3>
+            1. Jike article manage system<a href=""
+              ><span>(porject link)</span></a
+            >
+          </h3>
+
+          <li>
+            <span class="highlight">Component-Based Design</span>: Utilize React
+            components to construct the UI with reusable elements like
+            <span class="highlight">tables</span> and
+            <span class="highlight">forms</span>, enhancing code
+            <span class="highlight">maintainability</span> and
+            <span class="highlight">reusability</span>.
+          </li>
+          <li>
+            <span class="highlight">Declarative UI</span>: Build interfaces
+            declaratively using
+            <span class="highlight">Ant Design</span> components, simplifying
+            <span class="highlight">DOM operations</span> and
+            <span class="highlight">styling</span>, thereby increasing
+            <span class="highlight">development speed</span>.
+          </li>
+          <li>
+            <span class="highlight">State Management</span>: Employ React's
+            <span class="highlight">useState</span> and
+            <span class="highlight">useEffect</span> hooks for efficient
+            <span class="highlight">state</span> and
+            <span class="highlight">side effects</span> management, making the
+            application more <span class="highlight">intuitive</span> and
+            <span class="highlight">controlled</span>.
+          </li>
+          <li>
+            <span class="highlight">Routing Integration</span>: Implement
+            <span class="highlight">useNavigate</span> and
+            <span class="highlight">Link</span> from
+            <span class="highlight">react-router-dom</span> for smooth
+            navigation and <span class="highlight">route management</span>,
+            thereby improving <span class="highlight">user experience</span>.
+          </li>
+          <li>
+            <span class="highlight">Data Interaction</span>: Utilize
+            <span class="highlight">Axios</span> for data interactions to
+            streamline <span class="highlight">asynchronous API calls</span>.
+          </li>
+        </div>
+        
+        <hr>
+
+        <div class="project-experience-two">
+          <h3>
+            2. Miyazaki Hayao Cartons<a href=""><span>(porject link)</span></a>
+          </h3>
+          <li>
+            <span class="highlight">HTML5</span>: Utilizes
+            <span class="highlight">HTML5 standards</span> to construct the page
+            structure, ensuring good
+            <span class="highlight">cross-browser compatibility</span> and
+            adherence to modern web standards.
+          </li>
+          <li>
+            <span class="highlight">CSS3</span> and
+            <span class="highlight">Bootstrap</span>: Employs Bootstrap
+            framework's <span class="highlight">CSS classes</span> for quick
+            implementation of
+            <span class="highlight">responsive layouts</span> and modern UI
+            components like <span class="highlight">navigation bars</span> and
+            <span class="highlight">carousels</span>.
+          </li>
+          <li>
+            <span class="highlight">Web Font Icons</span>: Integrates a web font
+            icon library (<span class="highlight">iconfont</span>) to enhance
+            visual effects, improving page
+            <span class="highlight">load speed</span> and
+            <span class="highlight">display efficiency</span>, offering greater
+            flexibility than image-based icons.
+          </li>
+        </div>
+      </section>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script></script>
+  </body>
+</html>

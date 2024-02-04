@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 100vh; /* 确保body至少和视口一样高 */
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.container {
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+/* basic information */
+.basic {
+  padding-top: 1em;
+  /* background-color: antiquewhite; */
+  padding-bottom: 1em;
+}
+
+.basic > div {
+  margin-bottom: 1em; /* 为每个信息项增加底部间距 */
+  display: flex;
+  align-items: center; /* 垂直居中对齐所有子元素 */
+  /* gap: 10px; */
+  padding-bottom: 10px;
+}
+.basic div span {
+  padding-right: 0.5em;
+}
+
+.basic div i {
+  /* 字体加粗显示 */
+  font-weight: bold;
+}
+
+/* 响应式设计：在小屏幕上调整间距 */
+@media (max-width: 768px) {
+  .basic > div {
+    margin-bottom: 0.5em; /* 在小屏幕上减小信息项之间的间距 */
+  }
+
+  .basic > div p {
+    margin-left: 0.3em; /* 在小屏幕上减小图标和文本之间的间距 */
+  }
+}
+
+/* skill lists */
+
+.skills-graph {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.tech-stack,
+.graph {
+  flex: 1;
+  /* background-color: cadetblue; */
+}
+
+.tech-stack {
+  padding-bottom: 1em;
+  /* background-color: rgb(245, 245, 245); */
+}
+
+.tech-stack div {
+  margin-bottom: 1em;
+}
+
+.skill-list {
+  display: flex; /* 将ul设置为Flex容器 */
+  gap: 10px; /* 设置列表项之间的间隔 */
+  flex-wrap: wrap;
+}
+
+.skill-list li {
+  padding: 5px 0; /* 设置内边距 */
+}
+
+.projects {
+  margin-top: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .skills-graph {
+    flex-direction: column;
+  }
+}
+
+/* project experience */
+
+.projects h2,
+.projects div {
+  margin-bottom: 1em;
+}
+
+.projects a {
+  color: #007bff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.projects a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* .features-list {
+  margin-top: 1em;
+} */
+
+.projects li {
+  margin-bottom: 1em;
+  /* 小圆点 */
+  /* list-style-type: disc; */
+  margin-top: 1em;
+}
+
+.projects hr{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px dashed #b6b7b9;
+}
+
+.highlight {
+  font-family: monospace;
+  background: aquamarine;
+  padding: 3px;
+  border-radius: 5px;
+}
+

@@ -1,0 +1,44 @@
+{
+  "id": "4431264",
+  "name": "new-resume",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34453216",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e858",
+      "unicode_decimal": 59480
+    },
+    {
+      "icon_id": "34453208",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e856",
+      "unicode_decimal": 59478
+    },
+    {
+      "icon_id": "34453244",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e860",
+      "unicode_decimal": 59488
+    },
+    {
+      "icon_id": "34453356",
+      "name": "人才双选会",
+      "font_class": "rencaishuangxuanhui",
+      "unicode": "e87b",
+      "unicode_decimal": 59515
+    },
+    {
+      "icon_id": "34453363",
+      "name": "实地认证",
+      "font_class": "shidirenzheng",
+      "unicode": "e87c",
+      "unicode_decimal": 59516
+    }
+  ]
+}
