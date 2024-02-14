@@ -1,10 +1,10 @@
+/* Reset and base styles */
 body {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  min-height: 100vh; /* 确保body至少和视口一样高 */
+  min-height: 100vh; /* Ensure body is at least as tall as the viewport */
 }
 
 h1 {
@@ -19,95 +19,116 @@ h3 {
   font-size: 1.1em;
 }
 
-.container {
-  max-width: 70ch;
+/* summary */
+.summary{
+  margin-top: 20px;
+}
+
+/* Container styles */
+.container,
+header {
+  max-width: 150ch; /* header inherits max-width from .container for consistency */
   margin: 0 auto;
   padding: 1em;
   box-sizing: border-box;
 }
 
-/* basic information */
+/* Tech info section styles */
+.tech-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.basic,
+.tech-stack {
+  flex: 1;
+  min-width: 300px;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+}
+
+/* Basic information styles */
 .basic {
   padding-top: 1em;
-  /* background-color: antiquewhite; */
   padding-bottom: 1em;
 }
 
 .basic > div {
-  margin-bottom: 1em; /* 为每个信息项增加底部间距 */
+  margin-bottom: 1em;
   display: flex;
-  align-items: center; /* 垂直居中对齐所有子元素 */
-  /* gap: 10px; */
+  align-items: center;
   padding-bottom: 10px;
 }
+
 .basic div span {
   padding-right: 0.5em;
 }
 
 .basic div i {
-  /* 字体加粗显示 */
-  font-weight: bold;
+  font-weight: bold; /* Make font bold */
 }
 
-/* 响应式设计：在小屏幕上调整间距 */
-@media (max-width: 768px) {
-  .basic > div {
-    margin-bottom: 0.5em; /* 在小屏幕上减小信息项之间的间距 */
-  }
-
-  .basic > div p {
-    margin-left: 0.3em; /* 在小屏幕上减小图标和文本之间的间距 */
-  }
-}
-
-/* skill lists */
-
-.skills-graph {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.tech-stack,
-.graph {
-  flex: 1;
-  /* background-color: cadetblue; */
-}
-
+/* Tech stack and skills graph */
 .tech-stack {
-  padding-bottom: 1em;
-  /* background-color: rgb(245, 245, 245); */
-}
-
-.tech-stack div {
-  margin-bottom: 1em;
+  flex: 1;
 }
 
 .skill-list {
-  display: flex; /* 将ul设置为Flex容器 */
-  gap: 10px; /* 设置列表项之间的间隔 */
+  display: flex;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .skill-list li {
-  padding: 5px 0; /* 设置内边距 */
+  padding: 5px 0;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Creates two columns of equal width */
+  gap: 20px; /* Space between grid items */
+  padding: 1em; /* Padding around the entire grid */
+}
+
+.grid-container h3 {
+  margin-bottom: 0.5em;
+}
+
+/* Additional styling for visual enhancement */
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 1em; /* Padding inside each grid item */
+  border-radius: 5px; /* Optional: rounds the corners of the grid items */
+}
+
+.skill-list {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+}
+
+/* .tech-stack > div{
+  margin-top: 1em;
+} */
+.areas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Project experience styles */
 .projects {
   margin-top: 20px;
 }
 
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .skills-graph {
-    flex-direction: column;
-  }
-}
-
-/* project experience */
-
 .projects h2,
-.projects div {
+.projects div,
+.projects li,
+.projects h3 {
   margin-bottom: 1em;
 }
 
@@ -124,18 +145,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* .features-list {
-  margin-top: 1em;
-} */
-
-.projects li {
-  margin-bottom: 1em;
-  /* 小圆点 */
-  /* list-style-type: disc; */
-  margin-top: 1em;
-}
-
-.projects hr{
+.projects hr {
   margin-top: 1em;
   margin-bottom: 1em;
   border: 1px dashed #b6b7b9;
@@ -148,3 +158,53 @@ h3 {
   border-radius: 5px;
 }
 
+.subtitle {
+  font-family: monospace;
+  /* background: aquamarine; */
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+/* Summary section styles */
+.summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-container {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+}
+
+.project-experience-one,
+.project-experience-two,
+.project-image{
+  flex: 1;
+  /* border: 1px solid #ccc; */
+  /* padding: 10px; */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .basic > div,
+  .basic > div p {
+    margin-bottom: 0.5em; /* Reduce space between info items on small screens */
+    margin-left: 0.3em; /* Reduce space between icon and text on small screens */
+  }
+
+  .tech-info,
+  .project-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  
+}
