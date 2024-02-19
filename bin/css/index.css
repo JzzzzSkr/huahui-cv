@@ -41,6 +41,8 @@ header {
   gap: 20px;
 }
 
+
+
 .basic,
 .tech-stack {
   flex: 1;
@@ -60,7 +62,10 @@ header {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+  
 }
+
+
 
 .basic div span {
   padding-right: 0.5em;
@@ -207,5 +212,7 @@ header {
     flex-direction: column; /* Stack items vertically on small screens */
   }
 
-  
+  .basic > div{
+    align-items: baseline;
+  }
 }
