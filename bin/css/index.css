@@ -5,6 +5,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh; /* Ensure body is at least as tall as the viewport */
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
