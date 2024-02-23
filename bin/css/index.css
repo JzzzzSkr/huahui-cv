@@ -133,6 +133,9 @@ h3 {
 
 .project-experience-one .project-img {
   flex: 1;
+  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
 }
 
 .project-content {
