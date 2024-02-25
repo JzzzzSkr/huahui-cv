@@ -145,7 +145,7 @@
             </li>
           </div>
           <div class="project-img">
-            <img src="./bin/images/carton.png" alt="" />
+            <img src="./bin/images/carton.png" alt="" class="enlarge" />
           </div>
         </div>
         <hr />
@@ -190,7 +190,7 @@
             </li>
           </div>
           <div class="project-img">
-            <img src="./bin/images/miku.png" alt="" />
+            <img src="./bin/images/miku.png" alt="" class="enlarge" />
           </div>
         </div>
       </div>
@@ -199,5 +199,30 @@
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
+
+    <script>
+      document.querySelectorAll(".enlarge").forEach((img) => {
+        img.addEventListener("click", (e) => {
+          let imgsrc = e.target.getAttribute("src");
+
+          let overlay = document.createElement("div");
+          overlay.className = "opacityBottom";
+          overlay.style.display = "block";
+
+          let bigImg = document.createElement("img");
+          bigImg.className = "bigImg";
+          bigImg.src = imgsrc;
+
+          overlay.appendChild(bigImg);
+
+          overlay.addEventListener("click", () => {
+            overlay.style.display = "none";
+            document.body.removeChild(overlay);
+          });
+
+          document.body.appendChild(overlay);
+        });
+      });
+    </script>
   </body>
 </html>
